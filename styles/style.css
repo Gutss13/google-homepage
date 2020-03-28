@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #5f6368;
+}
+a {
+    text-decoration: none;
+    color: #5f6368;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+nav {
+    float: right;
+    position: relative;
+    top: 15px;
+    right: 5px;
+}
+.nav-flex {
+    display: flex;
+    align-items: center;
+}
+.nav-flex > li {
+    padding-right: 15px;
+    font-size: 13px;
+}
+
+
+
+main {
+    position: absolute;
+    display: block;
+    margin: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 200px;
+    text-align: center;
+
+}
+hgroup {
+    padding-top : 20px;
+    padding-bottom: 20px;
+    margin: 5px 0px;
+}
+h5 {
+    display: inline;
+    background-color: #F2F2F2;
+    margin: 0px 4px;
+    padding: 10px 16px;
+    border: 1px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.search {
+    width: 580px;
+    height: 39px;
+    margin: 37px 0px 0px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+.search:focus {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);  
+}
+.lang {
+    color: blue;
+}
+.lang:hover{
+    text-decoration: blue underline;
+}
+h5:hover {
+    color: black;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+p, a {
+    font-size: 13px;
+}
+#more-button {
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+}
+.location {
+    padding: 10px 0px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+.location > p {
+    margin-left: 30px;
+    font-size: 15px;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+.footer-left {
+    float: left;
+    margin-left: 3px;
+}
+.footer-right {
+    float: right;
+    margin-right: 3px;
+}
+.footer-left-items {
+    float: left;
+    padding-left: 27px;
+}
+.footer-right-items {
+    float: left;
+    padding-right: 27px;
+}
+.footer-links {
+    margin-top: 20px;
+}
+.footer-links a {
+    font-size: 14px;
+}
+
+@media(max-width: 1280px) {
+    .search {
+        width: 480px;
+    }
+}
+
+@media(max-width: 979px) {
+    nav {
+        position: absolute;
+        left: 773.41px;
+        top: 15px;
+        float: unset;
+    }
+    .footer-right {
+        display: flex;
+        position: absolute;
+        left: 764.37px;
+        bottom: 0px;
+        float: unset;
+    }
+    .footer-left {
+        display: flex;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        float: unset;
+    }
+    .footer-links {
+        bottom: auto;
+    }
+}
